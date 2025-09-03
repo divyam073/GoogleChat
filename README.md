@@ -7,7 +7,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/Ifeanyi55/GoogleChat)](https://github.com/Ifeanyi55/GoogleChat/commits/main)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Ifeanyi55/GoogleChat)
 
-GoogleChat is an R script that shows how to perform Google Search grounding in Gemini, thereby giving Gemini access to real-time information. Download the R script or follow the steps below to start GoogleChat.
+GoogleChat is an R script that shows how to perform Google Search grounding in Gemini, thereby giving Gemini access to real-time information. Download the R script or follow the steps below to build GoogleChat.
 
 - Step 1: Set your Gemini API key as an environment variable
   
