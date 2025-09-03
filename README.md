@@ -18,7 +18,6 @@ GoogleChat is an R script that shows how to perform Google Search grounding in G
 - Step 2: Define a Google Search tool using the [gemini.R](https://github.com/jhk0530/gemini.R) package. Make sure to include the roxygen documentation with "#'".
 
   ```
-  # define the Google Search tool
   #' Fetches data from Google Search API
   #' 
   #' @param query A string representing the search query.
