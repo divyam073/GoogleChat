@@ -19,10 +19,11 @@ google_search_tool <- function(query) {
 google_search_tool("what is today's date?")
 # [1] "Today is Wednesday, September 3, 2025."
 
-# register the Google Search tool
+# create chat object
 chat <- ellmer::chat_google_gemini(model = "gemini-2.5-flash",
                     api_key = api_key)
 
+# register the Google Search tool
 chat <- chat$register_tool(
   ellmer::tool(
     google_search_tool,
